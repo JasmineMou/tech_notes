@@ -1,5 +1,5 @@
 # full-stack-notes
-A repository summarizing the programming techniques and tricks.
+A repository to keep miscellaneous notes of all stacks.
 
 ## Python repository: 
 https://github.com/JasmineMou/playground_py
