@@ -18,11 +18,11 @@ $ git config --list
 `
 - Check out a new branch before `commit` and `push` (optional):    
 `
-git checkout -b NEWBRANCH
+$ git checkout -b NEWBRANCH
 `
 - Add new changes to the commit:    
 `
-git add .
+$ git add .
 `
 - Check git status for staging files and untrackted files if there are any (optional):    
 `
