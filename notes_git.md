@@ -41,11 +41,11 @@ Formula:
 `$ git push -f origin VERSION_CODE:BRANCH_NAME`
 
 Example:     
-Let's revert to one previous commit.
+Let's revert to one previous commit.    
 `
 $ git reset --hard HEAD~1
-`
-which returns, "HEAD is now at 6a107b4 Rendered results of R Markdown Example". Now plug the "6a107b4" into the "VERSION_CODE":
+`    
+which returns, "HEAD is now at 6a107b4 Rendered results of R Markdown Example". Now plug the "6a107b4" into the "VERSION_CODE":     
 `
 $ git push -f origin 6a107b4:test_branch
 `
