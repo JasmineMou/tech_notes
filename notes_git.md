@@ -1,4 +1,4 @@
-## how to enable multiple Github accounts on one device
+## how to use multiple Github accounts on Github Desktop 
 - `cd` to the directory that holds files to upload from a Github account different than the default global Github account.
 - Check the configurations of `user.name`, `user.email` first:    
 `
