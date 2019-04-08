@@ -29,10 +29,10 @@ git add .
 $ git status
 `
 - Commit and push:      
-`
+```
 $ git commit -am "YOUR MESSAGE"     
 $ git push origin NEWBRANCH
-`
+```
 - Open the github webpage and check. 
 - Add the repo to local desktop. From the preferences do: "Github Desktop" -> "File" -> "Add Local Repository". Choose the directory holding your files. Now make some changes to your files to test, and you should find the commits on Github page should be pushed from the local account specified previously. 
 
