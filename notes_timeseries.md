@@ -181,16 +181,42 @@ update: http://www.statsmodels.org/devel/generated/statsmodels.tsa.statespace.sa
 
 
 ## time series clustering
-https://stats.stackexchange.com/questions/66976/how-to-cluster-time-series
-http://www1.cs.columbia.edu/~jopa/Papers/PaparrizosSIGMOD2015.pdf
-http://www.stat.uchicago.edu/~xiangzhu/XZhu_anl13.pdf
-https://blog.newrelic.com/product-news/optimizing-k-means-clustering/
 
-silhouette analysis: https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html#sphx-glr-auto-examples-cluster-plot-kmeans-silhouette-analysis-py
+- kmeans
+	https://blog.newrelic.com/product-news/optimizing-k-means-clustering/
 
-Bill's example: https://dataplatform.cloud.ibm.com/analytics/notebooks/v2/193e02dd-5ed4-46a2-b508-cffff4325b85/view?access_token=28901283bfc02c5e6e30d330bf10ceda18cc666712ee0fae4358cbb41efde58d
+- kshape algorithm 
+	papers:
+		http://www1.cs.columbia.edu/~jopa/Papers/PaparrizosSIGMOD2015.pdf
 
-python library with clustering: tslearn
+	libraries: tslearn, kshape
+		https://tslearn.readthedocs.io/en/latest/gen_modules/clustering/tslearn.clustering.KShape.html
+
+		https://tslearn.readthedocs.io/en/latest/variablelength.html#clustering
+
+		https://github.com/Mic92/kshape
+
+	Bill's example: https://dataplatform.cloud.ibm.com/analytics/notebooks/v2/193e02dd-5ed4-46a2-b508-cffff4325b85/view?access_token=28901283bfc02c5e6e30d330bf10ceda18cc666712ee0fae4358cbb41efde58d
+
+- cluster alignments
+	dynamic time warping (DTW)
+		- https://en.wikipedia.org/wiki/Dynamic_time_warping
+		- https://www.sciencedirect.com/science/article/pii/S0031320318301286
+			- DTW overcomes the challenge of "although they may exhibit amplitude and shape similarity, they appear dephased in time." by aligning each sequence prior to establishing distance mesaurements. It allows two time-dependent sequences that are similar, but locally out of phase, to align in time. Its main objective consist of identifying an optimal alignment between sequences by warping the time axis iteratively.
+			- dynamic programming by establishing a N-by-M cost matrix; usually uses the euclidean distance as a distance function. 
+
+	longest common subsequence (LCSS)
+
+	viterbi algorithm
+
+- silhouette analysis: 
+	https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html#sphx-glr-auto-examples-cluster-plot-kmeans-silhouette-analysis-py
+
+- other
+	http://www.stat.uchicago.edu/~xiangzhu/XZhu_anl13.pdf
+	https://stats.stackexchange.com/questions/66976/how-to-cluster-time-series
+	R libaries: 
+		shape-based, DTW: https://cran.r-project.org/web/packages/dtwclust/vignettes/dtwclust.pdf
 
 
 ## enable mass prediction in scale
