@@ -61,3 +61,15 @@ $ git push -f origin 6a107b4:test_branch
 
 #### ref
 https://stackoverflow.com/a/1270608/2687773
+
+## how to fix the "github desktop commit failed exit code 1" error
+The error is caused by another nested `.git` directory in the files to push. Remove the `.git` directory will solve the issue. 
+- Navigate to the directory resulting in this error.
+- Delete the `.git` directory
+`
+$ ls -a
+$ rm -rf .git
+`
+
+#### ref
+https://github.com/desktop/desktop/issues/4432
